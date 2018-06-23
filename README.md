@@ -20,7 +20,7 @@ Navigate to server.js file and run the following command lines in the terminal:
 
 #### Screenshot
 
-![screen shot 2018-06-23 at 1 59 39 pm](https://user-images.githubusercontent.com/35505038/41813172-c63c658a-76ed-11e8-9763-8d111ad1aeb3.png)
+![screen shot 2018-06-23 at 3 42 42 pm](https://user-images.githubusercontent.com/35505038/41813889-258d6eea-76fc-11e8-9822-6cb79aeee559.png)
 
 ## Built With
 
