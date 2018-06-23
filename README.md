@@ -16,7 +16,7 @@ Navigate to server.js file and run the following command lines in the terminal:
 
 ### Deployment 
 
-* You go directly to site by pasting the following link in your browser (hosted by Heroku): https://blooming-journey-54656.herokuapp.com/
+* You go directly to site by pasting the following link in your browser (hosted by Heroku): https://blooming-journey-54656.herokuapp.com.
 
 #### Screenshot
 
