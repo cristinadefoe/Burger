@@ -1,0 +1,59 @@
+<div class='container'>
+    <div class="row">
+        <div class="col-md-10 text-center pic" id="top">
+            <img src='assets/img/burger.png' alt='burgers' height="90%" width="90%">
+            <h1>Counter-Gourmet-Burgers</h1>
+        </div>
+
+        <div class="col-md-6 text-center" class="act">
+            <div class='row'>
+
+                {{#each burger_data}} {{#unless this.devoured}}
+
+                <div class='col-md-10 text-center'>
+                    <pre>{{this.id}}, {{this.burger_name}}
+               </pre>
+
+                </div>
+
+                <div class='col-med-4  text-center'>
+                    <form class='devour-form button-size'>
+                        <input input type='hidden' class='burger_id' type='text' value={{this.id}}>
+
+                        <button type='submit' class='btn btn-default'>Eat the burger!</button>
+
+                    </form>
+                </div>
+
+                {{/unless}} {{/each}}
+            </div>
+        </div>
+
+        <div class='col-md-6 text-center' class='act'>
+
+            {{#each burger_data}} {{#if this.devoured}}
+
+            <input class='form-control' type='text' placeholder='{{this.id}} , {{this.burger_name}}' readonly> {{/if}} {{/each}}
+
+        </div>
+    </div>
+
+</div>
+
+<div class='container'>
+    <div class='row'>
+
+        <div class='col-md-10 text-center enter_section'>
+
+            <form action='/burgers/insertOne' method="POST">
+
+                <input type='text' class='form-control' name='burger_name' value='' id='enter_text'>
+                <button type='submit' class='btn btn-primary' id='text-enter-button'>Submit</button>
+
+            </form>
+
+            <p>Pick an item from the menu that you want to eat and then hit the "Submit" button.</p>
+        </div>
+    </div>
+
+</div>
